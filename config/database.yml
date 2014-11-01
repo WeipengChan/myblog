@@ -13,9 +13,9 @@ default: &default
   adapter: mysql2
   encoding: utf8
   pool: 5
-  username: root
+  username: "85299094"
   password: "123456"
-  host: localhost
+  host: us-cdbr-iron-east-01.cleardb.net/
 
 development:
   <<: *default
@@ -49,6 +49,7 @@ test:
 #
 production:
   <<: *default
-  database: blog_production
-  username: blog
-  password: "123456"
+  database: heroku_a16a93a46595587
+  username: b6e2bee465442e
+  password: "85299094"
+  host: us-cdbr-iron-east-01.cleardb.net
